@@ -1,0 +1,13 @@
+web:
+  build: .
+  ports:
+   - "8080:8080"
+  links:
+   - db
+db:
+  image: mongo
+  volumes:
+    - db:/data/db  
+  ports:
+    - "27017:27017"
+  command: "--smallfiles --logpath=/dev/null"
