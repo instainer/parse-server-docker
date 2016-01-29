@@ -23,6 +23,6 @@ app.get('/', function(req, res) {
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
-  console.log('parse-server-example running on port ' + port + '. APP_ID '+ ' appId ' + process.env.APP_ID);
+  console.log('parse-server running on port ' + port + '. APP_ID '+ ' appId ' + process.env.APP_ID);
 });
 
